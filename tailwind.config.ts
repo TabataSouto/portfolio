@@ -37,6 +37,15 @@ const config: Config = {
       fill: {
         "light-icon": "#2C2C2C",
         "dark-icon": "#2D2D2D",
+      },
+      animation: {
+        border: "border 1s ease infinite"
+      },
+      keyframes: {
+        border: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
       }
     },
   },

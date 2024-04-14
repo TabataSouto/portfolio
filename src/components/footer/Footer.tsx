@@ -72,7 +72,7 @@ export const Footer = ({
             width={40}
             height={40}
             alt=""
-            className="fill-current dark:invert"
+            className="fill-current dark:invert w-auto h-auto"
           />
         </div>
         <div className="flex gap-8">
