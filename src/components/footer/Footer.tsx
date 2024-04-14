@@ -80,7 +80,7 @@ export const Footer = ({
             <div className="flex gap-2 items-center">
               <Link
                 href={urlY ?? ""}
-                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-base flex justify-center items-center pb-[3px]"
+                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
               >
                 Y
               </Link>
@@ -93,7 +93,7 @@ export const Footer = ({
             <div className="flex gap-2 items-center">
               <Link
                 href={urlB ?? ""}
-                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-base flex justify-center items-center pb-[3px]"
+                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
               >
                 B
               </Link>
@@ -106,7 +106,7 @@ export const Footer = ({
             <div className="flex gap-2 items-center">
               <Link
                 href={urlA ?? ""}
-                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-base flex justify-center items-center pb-[3px]"
+                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
               >
                 A
               </Link>
@@ -119,7 +119,7 @@ export const Footer = ({
             <div className="flex gap-2 items-center">
               <Link
                 href={urlX ?? ""}
-                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-base flex justify-center items-center pb-[3px]"
+                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
               >
                 X
               </Link>

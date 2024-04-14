@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/context/themeContext";
+import MyProvider from "@/context";
 
 export const metadata: Metadata = {
   title: "Tabata",
@@ -21,7 +22,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <MyProvider>{children}</MyProvider>
         </ThemeProvider>
       </body>
     </html>

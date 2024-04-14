@@ -1,11 +1,12 @@
 "use client";
+import { Context } from "@/context";
 import { profiles } from "@/data/profiles";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 export const Profiles = () => {
-  const [selected, setSelected] = useState("taby");
+  const { selected, setSelected } = useContext(Context);
 
   return (
     <main className="pt-10 pl-12">
