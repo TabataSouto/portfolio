@@ -16,29 +16,21 @@ export const Profiles = () => {
             key={name + image}
             onClick={() => setSelected(name)}
           >
-            {/* <div
-              className={`${
-                name === selected
-                  ? "flex"
-                  : "border-transparent"
-              }`}
-            > */}
             <div
               className={`${
                 name === selected
                   ? "animate-border inline-block rounded-sm bg-gradient-to-r from-aqua via-[#3291ef] to-teal-400 bg-[length:400%_400%] p-[4px]"
-                  : "p-[3px]"
+                  : "p-[4px]"
               }`}
             >
               <div
                 className={`${
-                  name === selected ? "bg-white back dark:bg-gray-800" : "border-transparent"
+                  name === selected
+                    ? "bg-white back dark:bg-gray-800"
+                    : "border-transparent"
                 }`}
               >
-                <li
-                  onClick={() => setSelected(name)}
-                  className="p-[1px]"
-                >
+                <li onClick={() => setSelected(name)} className="p-[1px]">
                   <div className="shadow-sm shadow-gray-300 dark:shadow-black">
                     <Image
                       src={image}
