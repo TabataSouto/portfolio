@@ -15,7 +15,7 @@ export const DefaultHeader = ({
         <Image src={icon} width={40} height={40} alt="" />
         <p className="text-2xl">{title}</p>
       </div>
-      <hr className="mx-6 mt-2" />
+      <hr className="mx-6 mt-3" />
     </header>
   )
 }

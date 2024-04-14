@@ -12,8 +12,14 @@ const config: Config = {
         Cabin: "'Cabin', 'Roboto', Arial, sans-serif"
       },
       backgroundColor: {
-        switch: "#202020"
-      }
+        switch1: "#2D2D2D",
+        switch2: "#323232",
+        aqua: '#10C49C'
+      },
+      colors: {
+        aqua: '#10C49C',
+        switch1: "#2D2D2D",
+      },
     },
   },
   plugins: [],
