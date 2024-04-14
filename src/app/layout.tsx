@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { DefaultHeader } from "@/components/header/DefaultHeader";
-import { Footer } from "@/components/footer/Footer";
+import { ThemeProvider } from "@/context/themeContext";
 
 export const metadata: Metadata = {
   title: "Tabata",
@@ -14,8 +13,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
-      <body suppressHydrationWarning={true}>{children}</body>
+    <html lang="pt-br" suppressHydrationWarning>
+      <body suppressHydrationWarning>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

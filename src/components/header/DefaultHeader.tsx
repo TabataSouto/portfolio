@@ -1,21 +1,24 @@
-import Image from "next/image"
+import Image from "next/image";
 
 interface IDefaultHeaderProps {
   icon: string;
   title: string;
 }
 
-export const DefaultHeader = ({
-  icon,
-  title
-}: IDefaultHeaderProps) => {
+export const DefaultHeader = ({ icon, title }: IDefaultHeaderProps) => {
   return (
-    <header className="pt-5 text-white">
+    <header className="pt-5 dark:text-white">
       <div className="flex mx-14 items-center gap-3">
-        <Image src={icon} width={40} height={40} alt="" />
-        <p className="text-2xl">{title}</p>
+        <Image
+          src={icon}
+          alt=""
+          className="fill-current dark:invert"
+          height={40}
+          width={40}
+        />
+        <p className="text-2xl text-light-text font-normal dark:text-white dark:font-light dark:tracking-[0.04em]">{title}</p>
       </div>
-      <hr className="mx-6 mt-3" />
+      <hr className="mx-6 mt-3 border-light-mode-1 dark:border-dark-mode-1" />
     </header>
-  )
-}
+  );
+};

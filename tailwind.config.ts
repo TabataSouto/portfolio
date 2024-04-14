@@ -12,16 +12,35 @@ const config: Config = {
         Cabin: "'Cabin', 'Roboto', Arial, sans-serif"
       },
       backgroundColor: {
-        switch1: "#2D2D2D",
-        switch2: "#323232",
+        "light-mode-1": "#EBEBEB",
+        "light-mode-2": "#F0F0F0",
+        "light-mode-3": "#CCCCCC",
+        "light-mode-4": "#2C2C2C",
+        "dark-mode-1": "#2D2D2D",
+        "dark-mode-2": "#323232",
+        "dark-mode-3": "#414141",
         aqua: '#10C49C'
       },
-      colors: {
-        aqua: '#10C49C',
-        switch1: "#2D2D2D",
+      borderColor: {
+        "dark-mode-1": "#C0C0C0",
+        "dark-mode-2": "#515151",
+        "light-mode-1": "#666666",
+        "light-mode-2": "#cecece"
       },
+      colors: {
+        aqua: "#10C49C",
+        blue: "#324FF0",
+        "dark-mode-1": "#2D2D2D",
+        "light-mode-1": "#EBEBEB",
+        "light-text": "#2C2C2C"
+      },
+      fill: {
+        "light-icon": "#2C2C2C",
+        "dark-icon": "#2D2D2D",
+      }
     },
   },
   plugins: [],
+  darkMode: 'class'
 };
 export default config;
