@@ -11,7 +11,7 @@ export const MenuDashboard = () => {
               <Image src="/user.svg" width={30} height={30} alt="usuário" />
             </div>
           </div>
-          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2">
+          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 dark:group-hover:text-blue2 dark:font-light dark:pt-[1px]">
             Usuário
           </p>
         </li>
@@ -21,7 +21,7 @@ export const MenuDashboard = () => {
               <Image src="/message.svg" width={30} height={30} alt="contato" />
             </div>
           </div>
-          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2">
+          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 dark:group-hover:text-blue2 dark:font-light dark:pt-[1px]">
             Contato
           </p>
         </li>
@@ -31,7 +31,7 @@ export const MenuDashboard = () => {
               <Image src="/project.svg" width={32} height={32} alt="projetos" />
             </div>
           </div>
-          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2">
+          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 dark:group-hover:text-blue2 dark:font-light dark:pt-[1px]">
             Projetos
           </p>
         </li>
@@ -46,7 +46,7 @@ export const MenuDashboard = () => {
               />
             </div>
           </div>
-          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 w-24">
+          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 w-24 dark:group-hover:text-blue2 dark:font-light dark:pt-[1px]">
             Hard Skills
           </p>
         </li>
@@ -62,7 +62,7 @@ export const MenuDashboard = () => {
               />
             </div>
           </div>
-          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 w-24">
+          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 w-24 dark:group-hover:text-blue2 dark:font-light dark:pt-[1px]">
             Soft Skills
           </p>
         </li>
@@ -78,7 +78,7 @@ export const MenuDashboard = () => {
               />
             </div>
           </div>
-          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 w-24">
+          <p className="text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 w-24 dark:group-hover:text-blue2 dark:font-light dark:pt-[1px]">
             Experiência
           </p>
         </li>
