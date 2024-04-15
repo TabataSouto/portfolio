@@ -37,7 +37,8 @@ export const Profiles = () => {
                       src={image}
                       width={250}
                       height={250}
-                      alt="Perfil da Tabata"
+                      alt={name}
+                      priority={false}
                       className="w-40 h-40 object-cover"
                     />
                     <p className="bg-white text-light-text dark:text-white font-normal dark:font-light dark:bg-[#727272] w-40 h-10 text-center leading-10">
@@ -47,7 +48,6 @@ export const Profiles = () => {
                 </li>
               </div>
             </div>
-            {/* </div> */}
           </Link>
         ))}
       </ul>

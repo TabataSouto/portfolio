@@ -12,7 +12,8 @@ export const DashboardHeader = () => {
   const tick = () => {
     const currentDate = new Date();
     const formattedTime = currentDate.toLocaleTimeString("pt", {
-      hour12: false, timeStyle: "short"
+      hour12: false,
+      timeStyle: "short",
     });
     setTimeString(formattedTime);
   };
@@ -43,6 +44,7 @@ export const DashboardHeader = () => {
                   alt=""
                   height={70}
                   width={70}
+                  priority={false}
                   className={`${
                     selected === name ? "w-[70px] h-[70px]" : "w-16 h-16"
                   } object-cover rounded-full p-[2px]`}
@@ -58,7 +60,7 @@ export const DashboardHeader = () => {
             width={20}
             height={20}
             alt=""
-            className="fill-current dark:invert"
+            className="w-5 h-5 fill-current dark:invert"
           />
           <Image
             src="/battery.svg"

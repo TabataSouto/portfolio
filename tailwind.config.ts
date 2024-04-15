@@ -19,17 +19,21 @@ const config: Config = {
         "dark-mode-1": "#2D2D2D",
         "dark-mode-2": "#323232",
         "dark-mode-3": "#414141",
-        aqua: '#10C49C'
+        "red-menu": "#E70012",
+        aqua: '#00FEC9'
       },
       borderColor: {
         "dark-mode-1": "#C0C0C0",
         "dark-mode-2": "#515151",
+        "dark-mode-3": "#505050",
         "light-mode-1": "#666666",
         "light-mode-2": "#cecece"
       },
       colors: {
-        aqua: "#10C49C",
+        aqua: "#00FEC9",
         blue: "#324FF0",
+        aqua2: "#03B8C5",
+        blue2: "#1CB1ED",
         "dark-mode-1": "#2D2D2D",
         "light-mode-1": "#EBEBEB",
         "light-text": "#2C2C2C"
