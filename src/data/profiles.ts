@@ -1,6 +1,6 @@
 export const profiles = [
   {
-    image: "/tabata.jpg",
+    image: "/tabata.png",
     name: "taby"
   },
   {
