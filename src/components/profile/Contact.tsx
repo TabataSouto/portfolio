@@ -1,0 +1,68 @@
+import Link from "next/link";
+
+export const Contact = () => {
+  return (
+    <main className="flex flex-col gap-8 pt-10 pl-12 pr-16">
+      <article className="flex flex-col">
+        <div className="flex items-center pb-1">
+          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-aqua"></span>
+          <h2 className="text-base text-light-text-2 font-normal ml-3">
+            E-mail
+          </h2>
+        </div>
+        <hr className="border-light-mode-2 dark:border-dark-mode-2" />
+        <p className="text-xl font-normal p-3">tabatac.souto@gmail.com</p>
+        <hr className="border-light-mode-2 dark:border-dark-mode-2" />
+      </article>
+      <article className="flex flex-col">
+        <div className="flex items-center pb-1">
+          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-aqua"></span>
+          <h2 className="text-base text-light-text-2 font-normal ml-3">
+            Linkedin
+          </h2>
+        </div>
+        <hr className="border-light-mode-2 dark:border-dark-mode-2" />
+        <Link
+          href="https://www.linkedin.com/in/tabatasouto/"
+          passHref
+          target="_blank"
+        >
+          <p className="text-xl font-normal text-blue p-3">
+            https://www.linkedin.com/in/tabatasouto/
+          </p>
+        </Link>
+        <hr className="border-light-mode-2 dark:border-dark-mode-2" />
+      </article>
+      <article className="flex flex-col">
+        <div className="flex items-center pb-1">
+          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-aqua"></span>
+          <h2 className="text-base text-light-text-2 font-normal ml-3">
+            Telefone
+          </h2>
+        </div>
+        <hr className="border-light-mode-2 dark:border-dark-mode-2" />
+        <p className="text-xl font-normal p-3">(11) 94338-3072</p>
+        <hr className="border-light-mode-2 dark:border-dark-mode-2" />
+      </article>
+      <article className="flex flex-col">
+        <div className="flex items-center pb-1">
+          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-aqua"></span>
+          <h2 className="text-base text-light-text-2 font-normal ml-3">
+            GitHub
+          </h2>
+        </div>
+        <hr className="border-light-mode-2 dark:border-dark-mode-2" />
+        <Link
+          href="https://github.com/TabataSouto"
+          passHref
+          target="_blank"
+        >
+          <p className="text-xl font-normal text-blue p-3">
+            https://github.com/TabataSouto
+          </p>
+        </Link>
+        <hr className="border-light-mode-2 dark:border-dark-mode-2" />
+      </article>
+    </main>
+  );
+};

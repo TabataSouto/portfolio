@@ -89,6 +89,19 @@ export const Footer = ({
               </p>
             </div>
           )}
+          {buttonX && (
+            <div className="flex gap-2 items-center">
+              <Link
+                href={urlX ?? ""}
+                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
+              >
+                X
+              </Link>
+              <p className="text-light-text font-normal dark:text-white dark:font-light dark:tracking-[0.05em]">
+                {titleButtonX}
+              </p>
+            </div>
+          )}
           {buttonB && (
             <div className="flex gap-2 items-center">
               <Link
@@ -102,6 +115,7 @@ export const Footer = ({
               </p>
             </div>
           )}
+
           {buttonA && (
             <div className="flex gap-2 items-center">
               <Link
@@ -112,19 +126,6 @@ export const Footer = ({
               </Link>
               <p className="text-light-text font-normal dark:text-white dark:font-light dark:tracking-[0.05em]">
                 {titleButtonA}
-              </p>
-            </div>
-          )}
-          {buttonX && (
-            <div className="flex gap-2 items-center">
-              <Link
-                href={urlX ?? ""}
-                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
-              >
-                X
-              </Link>
-              <p className="text-light-text font-normal dark:text-white dark:font-light dark:tracking-[0.05em]">
-                {titleButtonX}
               </p>
             </div>
           )}

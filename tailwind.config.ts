@@ -16,6 +16,7 @@ const config: Config = {
         "light-mode-2": "#F0F0F0",
         "light-mode-3": "#CCCCCC",
         "light-mode-4": "#2C2C2C",
+        "light-mode-5": "#717171",
         "dark-mode-1": "#2D2D2D",
         "dark-mode-2": "#323232",
         "dark-mode-3": "#414141",
@@ -36,7 +37,8 @@ const config: Config = {
         blue2: "#1CB1ED",
         "dark-mode-1": "#2D2D2D",
         "light-mode-1": "#EBEBEB",
-        "light-text": "#2C2C2C"
+        "light-text": "#2C2C2C",
+        "light-text-2": "#717171",
       },
       fill: {
         "light-icon": "#2C2C2C",

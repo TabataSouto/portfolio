@@ -3,12 +3,14 @@ export const dashboatdMenu = [
     title: "Usuário",
     icon: "/user.svg",
     url: "/profile",
+    tab: "usuario",
     classImg: ""
   },
   {
     title: "Contato",
     icon: "/message.svg",
-    url: "/contact",
+    url: "/profile",
+    tab: "contact",
     classImg: ""
   },
   {
@@ -20,7 +22,8 @@ export const dashboatdMenu = [
   {
     title: "Experiência",
     icon: "/experience.svg",
-    url: "/experience",
+    url: "/profile",
+    tab: "experience",
     classImg: "fill-current dark:invert"
   },
   {
