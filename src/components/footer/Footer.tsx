@@ -103,10 +103,10 @@ export const Footer = ({
             width={40}
             height={40}
             alt=""
-            className="fill-current dark:invert w-auto h-auto"
+            className="fill-current dark:invert w-auto h-auto max-sm:w-12 max-sm:h-12"
           />
         </div>
-        <div className="flex gap-8">
+        <div className="flex gap-8 max-sm:hidden">
           {buttonY && (
             <ButtonRender
               url={urlY ?? ""}
