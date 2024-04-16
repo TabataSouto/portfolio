@@ -22,6 +22,8 @@ const config: Config = {
         "dark-mode-3": "#414141",
         "dark-mode-4": "#9F9F9F",
         "red-menu": "#E70012",
+        "white-50": "rgb(255 255 255 / 0.6)",
+        "black-50": "rgb(45 45 45 / 0.6)",
         aqua: '#00FEC9'
       },
       borderColor: {

@@ -20,13 +20,17 @@ const list = [
     tag: "experiência",
     title: "Experiência",
   },
+  {
+    tag: "formação",
+    title: "Formação",
+  }
 ];
 
 export default function Profile() {
   const { menu, setMenu } = useContext(Context);
 
   return (
-    <div className="bg-[#EBEBEB] text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col h-full">
+    <div className="bg-[#EBEBEB] text-dark-mode-1 dark:bg-dark-mode-1 dark:text-white text-lg tracking-wide flex flex-col h-full">
       <DefaultHeader icon="/user2.svg" title="Informações do usuário" />
       <nav className="flex-1 grid grid-cols-[1fr,2fr]">
         <ul className="ml-6 relative flex flex-col gap-4 pt-4 bg-light-mode-2 dark:bg-dark-mode-2">

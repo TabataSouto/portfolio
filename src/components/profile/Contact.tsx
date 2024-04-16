@@ -53,7 +53,7 @@ export const Contact = () => {
         </div>
         <hr className="border-light-mode-2 dark:border-dark-mode-2" />
         <Link href="https://github.com/TabataSouto" passHref target="_blank">
-          <p className="text-xl font-normal text-blueb dark:text-aqua p-3">
+          <p className="text-xl font-normal text-blue dark:text-aqua p-3">
             https://github.com/TabataSouto
           </p>
         </Link>
