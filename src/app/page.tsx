@@ -11,7 +11,7 @@ export default function Home() {
   const { menu, setMenu } = useContext(Context);
 
   return (
-    <div className="bg-[#EBEBEB] text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col h-screen">
+    <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col h-screen">
       <DefaultHeader icon={setting} title="Configurações do console" />
       <div className="flex-1 grid grid-cols-[1fr,2fr] max-sm:flex max-sm:flex-col">
         <ul className="ml-6 relative flex flex-col gap-4 pt-4 bg-light-mode-2 dark:bg-dark-mode-2 max-sm:flex-row max-sm:pb-4 max-sm:ml-0 max-sm:gap-8">
@@ -22,7 +22,7 @@ export default function Home() {
            <p
               className={`${
                 menu === "usuários" && "text-blue dark:text-aqua"
-              } font-normal pl-14 dark:font-light dark:tracking-[0.05em] max-sm:px-2`}
+              } font-normal pl-14 dark:font-light dark:tracking-[0.05em] max-sm:px-2 max-sm:text-base`}
             >
               Temas
             </p>
@@ -37,7 +37,7 @@ export default function Home() {
             <p
               className={`${
                 menu === "usuários" && "text-blue dark:text-aqua"
-              } font-normal pl-14 dark:font-light dark:tracking-[0.05em] max-sm:px-2`}
+              } font-normal pl-14 dark:font-light dark:tracking-[0.05em] max-sm:px-2 max-sm:text-base`}
             >
               Usuários
             </p>

@@ -60,7 +60,18 @@ export const Footer = ({
     return () => {
       window.removeEventListener("keypress", handleKeyPress);
     };
-  }, [router, urlA, urlB, urlX, urlY]);
+  }, [
+    router,
+    setMenu,
+    titleButtonA,
+    titleButtonB,
+    titleButtonX,
+    titleButtonY,
+    urlA,
+    urlB,
+    urlX,
+    urlY,
+  ]);
 
   const ButtonRender = ({
     url,
@@ -72,7 +83,11 @@ export const Footer = ({
     title: string;
   }) => {
     return (
-      <div className="flex gap-2 items-center">
+      <div
+        className={`flex gap-2 items-center ${
+          title !== "Voltar" && "max-sm:hidden"
+        }`}
+      >
         <Link
           href={url ?? ""}
           onClick={() => title === "Home" && setMenu("usuários")}
@@ -103,10 +118,10 @@ export const Footer = ({
             width={40}
             height={40}
             alt=""
-            className="fill-current dark:invert w-auto h-auto max-sm:w-12 max-sm:h-12"
+            className="fill-current dark:invert w-auto h-auto"
           />
         </div>
-        <div className="flex gap-8 max-sm:hidden">
+        <div className="flex gap-8">
           {buttonY && (
             <ButtonRender
               url={urlY ?? ""}

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { profiles } from "@/data/profiles";
 import { Context } from "@/context";
 
-export const DashboardHeader = () => {
+export const DesktopHeader = () => {
   const { selected, setSelected } = useContext(Context);
   const [timeString, setTimeString] = useState("");
 
@@ -25,7 +25,7 @@ export const DashboardHeader = () => {
   }, []);
 
   return (
-    <header className="pt-5 dark:text-white">
+    <header className="pt-5 dark:text-white max-sm:hidden">
       <div className="flex mx-14 items-center justify-between gap-3">
         <div className="flex gap-1">
           {profiles.map(({ name, image }) => (

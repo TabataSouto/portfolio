@@ -10,7 +10,7 @@ export const MenuDashboard = () => {
 
   return (
     <div>
-      <ul className="flex pt-6 gap-4 text-transparent">
+      <ul className="flex pt-6 gap-4 text-transparent max-sm:hidden">
         {dashboatdMenu.map(({ title, icon, classImg, url, tag }) => (
           <Link href={url} passHref key={title + url} onClick={() => setMenu(tag ?? "")}>
             <li className="group flex flex-col items-center w-16">
