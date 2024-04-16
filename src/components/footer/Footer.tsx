@@ -1,8 +1,9 @@
 "use client";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { Context } from "@/context";
 
 interface IFooterProps {
   buttonA?: boolean;
@@ -33,17 +34,22 @@ export const Footer = ({
   titleButtonX,
   urlX,
 }: IFooterProps) => {
+  const { setMenu } = useContext(Context);
   const router = useRouter();
 
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
-      if (urlY?.length && event.key === "y") {
+      if (urlY?.length && event.key.toLowerCase() === "y") {
+        titleButtonY === "Home" && setMenu("usuários");
         router.push(urlY);
-      } else if (urlB?.length && event.key === "b") {
+      } else if (urlB?.length && event.key.toLowerCase() === "b") {
+        titleButtonB === "Home" && setMenu("usuários");
         router.push(urlB);
-      } else if (urlA?.length && event.key === "a") {
+      } else if (urlA?.length && event.key.toLowerCase() === "a") {
+        titleButtonA === "Home" && setMenu("usuários");
         router.push(urlA);
-      } else if (urlX?.length && event.key === "x") {
+      } else if (urlX?.length && event.key.toLowerCase() === "x") {
+        titleButtonX === "Home" && setMenu("usuários");
         router.push(urlX);
       }
     };
@@ -55,6 +61,31 @@ export const Footer = ({
       window.removeEventListener("keypress", handleKeyPress);
     };
   }, [router, urlA, urlB, urlX, urlY]);
+
+  const ButtonRender = ({
+    url,
+    letter,
+    title,
+  }: {
+    url: string;
+    letter: string;
+    title: string;
+  }) => {
+    return (
+      <div className="flex gap-2 items-center">
+        <Link
+          href={url ?? ""}
+          onClick={() => title === "Home" && setMenu("usuários")}
+          className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
+        >
+          {letter}
+        </Link>
+        <p className="text-light-text font-normal dark:text-white dark:font-light dark:tracking-[0.05em]">
+          {title}
+        </p>
+      </div>
+    );
+  };
 
   return (
     <footer className="text-white text-lg dark:bg-dark-mode-1">
@@ -77,57 +108,32 @@ export const Footer = ({
         </div>
         <div className="flex gap-8">
           {buttonY && (
-            <div className="flex gap-2 items-center">
-              <Link
-                href={urlY ?? ""}
-                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
-              >
-                Y
-              </Link>
-              <p className="text-light-text font-normal dark:text-white dark:font-light dark:tracking-[0.05em]">
-                {titleButtonY}
-              </p>
-            </div>
+            <ButtonRender
+              url={urlY ?? ""}
+              letter="Y"
+              title={titleButtonY ?? ""}
+            />
           )}
           {buttonX && (
-            <div className="flex gap-2 items-center">
-              <Link
-                href={urlX ?? ""}
-                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
-              >
-                X
-              </Link>
-              <p className="text-light-text font-normal dark:text-white dark:font-light dark:tracking-[0.05em]">
-                {titleButtonX}
-              </p>
-            </div>
+            <ButtonRender
+              url={urlX ?? ""}
+              letter="X"
+              title={titleButtonX ?? ""}
+            />
           )}
           {buttonB && (
-            <div className="flex gap-2 items-center">
-              <Link
-                href={urlB ?? ""}
-                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
-              >
-                B
-              </Link>
-              <p className="text-light-text font-normal dark:text-white dark:font-light dark:tracking-[0.05em]">
-                {titleButtonB}
-              </p>
-            </div>
+            <ButtonRender
+              url={urlB ?? ""}
+              letter="B"
+              title={titleButtonB ?? ""}
+            />
           )}
-
           {buttonA && (
-            <div className="flex gap-2 items-center">
-              <Link
-                href={urlA ?? ""}
-                className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
-              >
-                A
-              </Link>
-              <p className="text-light-text font-normal dark:text-white dark:font-light dark:tracking-[0.05em]">
-                {titleButtonA}
-              </p>
-            </div>
+            <ButtonRender
+              url={urlA ?? ""}
+              letter="A"
+              title={titleButtonA ?? ""}
+            />
           )}
         </div>
       </div>

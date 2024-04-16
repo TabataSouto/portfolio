@@ -5,8 +5,8 @@ export const Contact = () => {
     <main className="flex flex-col gap-8 pt-10 pl-12 pr-16">
       <article className="flex flex-col">
         <div className="flex items-center pb-1">
-          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-aqua"></span>
-          <h2 className="text-base text-light-text-2 font-normal ml-3">
+          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
+          <h2 className="text-base text-light-text-2 font-normal ml-3  dark:text-dark-mode-2">
             E-mail
           </h2>
         </div>
@@ -16,8 +16,8 @@ export const Contact = () => {
       </article>
       <article className="flex flex-col">
         <div className="flex items-center pb-1">
-          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-aqua"></span>
-          <h2 className="text-base text-light-text-2 font-normal ml-3">
+          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
+          <h2 className="text-base text-light-text-2 font-normal ml-3 dark:text-dark-mode-2">
             Linkedin
           </h2>
         </div>
@@ -27,7 +27,7 @@ export const Contact = () => {
           passHref
           target="_blank"
         >
-          <p className="text-xl font-normal text-blue p-3">
+          <p className="text-xl font-normal text-blue dark:text-aqua p-3">
             https://www.linkedin.com/in/tabatasouto/
           </p>
         </Link>
@@ -35,8 +35,8 @@ export const Contact = () => {
       </article>
       <article className="flex flex-col">
         <div className="flex items-center pb-1">
-          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-aqua"></span>
-          <h2 className="text-base text-light-text-2 font-normal ml-3">
+          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
+          <h2 className="text-base text-light-text-2 font-normal ml-3 dark:text-dark-mode-2">
             Telefone
           </h2>
         </div>
@@ -46,18 +46,14 @@ export const Contact = () => {
       </article>
       <article className="flex flex-col">
         <div className="flex items-center pb-1">
-          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-aqua"></span>
+          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
           <h2 className="text-base text-light-text-2 font-normal ml-3">
             GitHub
           </h2>
         </div>
         <hr className="border-light-mode-2 dark:border-dark-mode-2" />
-        <Link
-          href="https://github.com/TabataSouto"
-          passHref
-          target="_blank"
-        >
-          <p className="text-xl font-normal text-blue p-3">
+        <Link href="https://github.com/TabataSouto" passHref target="_blank">
+          <p className="text-xl font-normal text-blueb dark:text-aqua p-3">
             https://github.com/TabataSouto
           </p>
         </Link>

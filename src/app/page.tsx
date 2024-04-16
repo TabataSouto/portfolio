@@ -1,13 +1,14 @@
 "use client";
-import { useState } from "react";
+import { useContext } from "react";
 import { DefaultHeader } from "@/components/header/DefaultHeader";
 import { Theme } from "@/components/home/Theme";
 import { Profiles } from "@/components/home/Profiles";
 import { Footer } from "@/components/footer/Footer";
 import setting from "@/../public/settings.svg";
+import { Context } from "@/context";
 
 export default function Home() {
-  const [menu, setMenu] = useState<string>("usuários");
+  const { menu, setMenu } = useContext(Context);
 
   return (
     <div className="bg-[#EBEBEB] text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col h-full">

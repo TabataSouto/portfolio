@@ -20,6 +20,7 @@ const config: Config = {
         "dark-mode-1": "#2D2D2D",
         "dark-mode-2": "#323232",
         "dark-mode-3": "#414141",
+        "dark-mode-4": "#9F9F9F",
         "red-menu": "#E70012",
         aqua: '#00FEC9'
       },
@@ -36,6 +37,7 @@ const config: Config = {
         aqua2: "#03B8C5",
         blue2: "#1CB1ED",
         "dark-mode-1": "#2D2D2D",
+        "dark-mode-2": "#9F9F9F",
         "light-mode-1": "#EBEBEB",
         "light-text": "#2C2C2C",
         "light-text-2": "#717171",

@@ -14,26 +14,26 @@ interface IMyProviderProps {
 interface IContext {
   selected: string;
   setSelected: Dispatch<SetStateAction<string>>;
-  tab: string;
-  setTab: Dispatch<SetStateAction<string>>;
+  menu: string;
+  setMenu: Dispatch<SetStateAction<string>>;
 }
 
 export const Context = createContext<IContext>({
   selected: "taby",
   setSelected: () => {},
-  tab: "usuario",
-  setTab: () => {},
+  menu: "usuario",
+  setMenu: () => {},
 });
 
 export default function MyProvider({ children }: IMyProviderProps) {
   const [selected, setSelected] = useState("taby");
-  const [tab, setTab] = useState("usuario");
+  const [menu, setMenu] = useState<string>("usuários");
 
   const values = {
     selected,
     setSelected,
-    tab,
-    setTab,
+    menu,
+    setMenu,
   };
 
   return <Context.Provider value={values}>{children}</Context.Provider>;

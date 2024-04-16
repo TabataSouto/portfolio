@@ -4,12 +4,13 @@ import { DefaultHeader } from "@/components/header/DefaultHeader";
 import { Contact } from "@/components/profile/Contact";
 import { Experience } from "@/components/profile/Experience";
 import { ProfileUser } from "@/components/profile/Profile";
-import { useState } from "react";
+import { Context } from "@/context";
+import { useContext } from "react";
 
 const list = [
   {
-    tag: "usuário",
-    title: "Usuário",
+    tag: "perfil",
+    title: "Perfil",
   },
   {
     tag: "contato",
@@ -22,7 +23,7 @@ const list = [
 ];
 
 export default function Profile() {
-  const [menu, setMenu] = useState<string>("usuário");
+  const { menu, setMenu } = useContext(Context);
 
   return (
     <div className="bg-[#EBEBEB] text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col h-full">
@@ -51,7 +52,7 @@ export default function Profile() {
             </>
           ))}
         </ul>
-        {menu === "usuário" && <ProfileUser />}
+        {menu === "perfil" && <ProfileUser />}
         {menu === "contato" && <Contact />}
         {menu === "experiência" && <Experience />}
       </nav>
@@ -65,7 +66,7 @@ export default function Profile() {
         buttonX
         titleButtonX="Projetos"
         urlX="/projects"
-      />x
+      />
     </div>
   );
 }
