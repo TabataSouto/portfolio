@@ -17,5 +17,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background: #EBEBEB;
+  box-sizing: border-box;
   /* overflow: hidden; */
 }

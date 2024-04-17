@@ -84,7 +84,7 @@ export const Footer = ({
   }) => {
     return (
       <div
-        className={`flex gap-2 items-center bottom-0 ${
+        className={`flex gap-2 items-center my-auto ${
           title !== "Voltar" && "max-sm:hidden"
         }`}
       >
