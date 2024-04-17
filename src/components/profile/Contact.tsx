@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Contact = () => {
   return (
-    <main className="flex flex-col gap-8 pt-10 pl-12 pr-16">
+    <main className="flex flex-col gap-8 pt-10 pl-12 pr-16 max-sm:px-10 max-[400px]:px-6">
       <article className="flex flex-col">
         <div className="flex items-center pb-1">
           <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
@@ -11,7 +11,7 @@ export const Contact = () => {
           </h2>
         </div>
         <hr className="border-light-mode-2 dark:border-dark-mode-2" />
-        <p className="text-xl font-normal p-3">tabatac.souto@gmail.com</p>
+        <p className="text-xl font-normal p-3 max-[900px]:text-lg max-[400px]:text-base">tabatac.souto@gmail.com</p>
         <hr className="border-light-mode-2 dark:border-dark-mode-2" />
       </article>
       <article className="flex flex-col">
@@ -27,8 +27,8 @@ export const Contact = () => {
           passHref
           target="_blank"
         >
-          <p className="text-xl font-normal text-blue dark:text-aqua p-3">
-            https://www.linkedin.com/in/tabatasouto/
+          <p className="text-xl font-normal text-blue dark:text-aqua p-3 max-[900px]:text-lg max-[400px]:text-base">
+            linkedin.com/in/tabatasouto/
           </p>
         </Link>
         <hr className="border-light-mode-2 dark:border-dark-mode-2" />
@@ -41,7 +41,7 @@ export const Contact = () => {
           </h2>
         </div>
         <hr className="border-light-mode-2 dark:border-dark-mode-2" />
-        <p className="text-xl font-normal p-3">(11) 94338-3072</p>
+        <p className="text-xl font-normal p-3 max-[900px]:text-lg max-[400px]:text-base">(11) 94338-3072</p>
         <hr className="border-light-mode-2 dark:border-dark-mode-2" />
       </article>
       <article className="flex flex-col">
@@ -53,8 +53,8 @@ export const Contact = () => {
         </div>
         <hr className="border-light-mode-2 dark:border-dark-mode-2" />
         <Link href="https://github.com/TabataSouto" passHref target="_blank">
-          <p className="text-xl font-normal text-blue dark:text-aqua p-3">
-            https://github.com/TabataSouto
+          <p className="text-xl font-normal text-blue dark:text-aqua p-3 max-[900px]:text-lg max-[400px]:text-base">
+            github.com/TabataSouto
           </p>
         </Link>
         <hr className="border-light-mode-2 dark:border-dark-mode-2" />
