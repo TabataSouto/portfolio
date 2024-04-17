@@ -9,7 +9,7 @@ export const MenuDashboard = () => {
   const { setMenu } = useContext(Context);
 
   return (
-    <div>
+    <nav>
       <ul className="flex pt-6 gap-4 text-transparent max-sm:hidden">
         {dashboatdMenu.map(({ title, icon, classImg, url, tag }) => (
           <Link href={url} passHref key={title + url} onClick={() => setMenu(tag ?? "")}>
@@ -38,6 +38,6 @@ export const MenuDashboard = () => {
           </Link>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 };

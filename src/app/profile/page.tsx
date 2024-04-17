@@ -1,6 +1,7 @@
 "use client";
 import { Footer } from "@/components/footer/Footer";
 import { DefaultHeader } from "@/components/header/DefaultHeader";
+import { MobileHeader } from "@/components/header/MobileHeader";
 import { Contact } from "@/components/profile/Contact";
 import { Experience } from "@/components/profile/Experience";
 import { ProfileUser } from "@/components/profile/Profile";
@@ -17,10 +18,6 @@ const list = [
     title: "Contato",
   },
   {
-    tag: "experiência",
-    title: "Experiência",
-  },
-  {
     tag: "formação",
     title: "Formação",
   }
@@ -32,8 +29,9 @@ export default function Profile() {
   return (
     <div className="bg-[#EBEBEB] text-dark-mode-1 dark:bg-dark-mode-1 dark:text-white text-lg tracking-wide flex flex-col h-full">
       <DefaultHeader icon="/user2.svg" title="Informações do usuário" />
-      <nav className="flex-1 grid grid-cols-[1fr,2fr]">
-        <ul className="ml-6 relative flex flex-col gap-4 pt-4 bg-light-mode-2 dark:bg-dark-mode-2">
+      <MobileHeader list={list} />
+      <nav className="flex-1 grid grid-cols-[1fr,2fr] max-sm:flex max-sm:flex-col">
+        <ul className="ml-6 relative flex flex-col gap-4 pt-4 bg-light-mode-2 dark:bg-dark-mode-2 max-sm:hidden">
           {list.map(({ title, tag }, index) => (
             <>
             <li
