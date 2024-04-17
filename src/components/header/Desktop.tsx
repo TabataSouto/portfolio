@@ -7,8 +7,8 @@ interface IDefaultHeaderProps {
 
 export const DesktopHeader = ({ icon, title }: IDefaultHeaderProps) => {
   return (
-    <header className="pt-5 dark:text-white max-sm:hidden">
-      <div className="flex mx-14 items-center gap-3">
+    <header className=" dark:text-white max-sm:hidden">
+      <div className="flex items-center gap-3">
         <Image
           src={icon}
           alt=""
@@ -20,7 +20,7 @@ export const DesktopHeader = ({ icon, title }: IDefaultHeaderProps) => {
           {title}
         </p>
       </div>
-      <hr className="mx-6 mt-3 border-light-mode-1 dark:border-dark-mode-1" />
+      <hr className=" border-light-mode-1 dark:border-dark-mode-1" />
     </header>
   );
 };

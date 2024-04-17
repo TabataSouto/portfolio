@@ -84,7 +84,7 @@ export const Footer = ({
   }) => {
     return (
       <div
-        className={`flex gap-2 items-center my-auto ${
+        className={`flex gap-2 items-center ${
           title !== "Voltar" && "max-sm:hidden"
         }`}
       >
@@ -104,8 +104,8 @@ export const Footer = ({
 
   return (
     <footer className="text-white text-lg dark:bg-dark-mode-1">
-      <hr className="mx-6 border-light-mode-1 dark:border-dark-mode-1" />
-      <div className="flex items-center justify-between px-14 py-3">
+      <hr className="border-light-mode-1 dark:border-dark-mode-1" />
+      <div className="flex items-center justify-between">
         <div className="flex flex-col items-center gap-[6px] dark:text-white">
           <div className="flex gap-[3px] items-center">
             <div className="w-[7px] h-[7px] bg-[#A6D13B]"></div>
@@ -121,7 +121,7 @@ export const Footer = ({
             className="fill-current dark:invert w-auto h-auto"
           />
         </div>
-        <div className="flex gap-8">
+        {/* <div className="flex gap-8">
           {buttonY && (
             <ButtonRender
               url={urlY ?? ""}
@@ -150,7 +150,7 @@ export const Footer = ({
               title={titleButtonA ?? ""}
             />
           )}
-        </div>
+        </div> */}
       </div>
     </footer>
   );
