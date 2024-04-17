@@ -9,7 +9,7 @@ export const Profiles = () => {
   const { selected, setSelected } = useContext(Context);
 
   return (
-    <nav className="py-10 pl-12 max-sm:px-3 max-sm:py-10">
+    <nav className="pt-10 pl-12 max-sm:px-3 max-sm:py-10">
       <ul className="flex flex-wrap max-sm:justify-center">
         {profiles.map(({ image, name }) => (
           <Link
