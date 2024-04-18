@@ -7,7 +7,7 @@ interface IDefaultHeaderProps {
 
 export const DesktopHeader = ({ icon, title }: IDefaultHeaderProps) => {
   return (
-    <header className="pt-5 dark:text-white max-sm:hidden">
+    <header className="pt-5 dark:text-white max-sm:hidden sticky top-0 z-50">
       <div className="flex mx-14 items-center gap-3">
         <Image
           src={icon}

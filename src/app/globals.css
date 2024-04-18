@@ -18,5 +18,5 @@ body {
   justify-content: space-between;
   background: #EBEBEB;
   box-sizing: border-box;
-  /* overflow: hidden; */
+  overflow: hidden;
 }

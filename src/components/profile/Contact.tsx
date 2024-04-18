@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export const Contact = () => {
   return (
-    <main className="flex flex-col gap-8 pt-10 pl-12 pr-16 max-sm:px-10 max-[400px]:px-6">
+    <main className="flex flex-col gap-8 py-10 pl-12 pr-16 max-sm:px-10 max-[400px]:px-6">
       <article className="flex flex-col">
         <div className="flex items-center pb-1">
-          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
+          <span className="w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
           <h2 className="text-base text-light-text-2 font-normal ml-3  dark:text-dark-mode-2">
             E-mail
           </h2>
@@ -16,7 +16,7 @@ export const Contact = () => {
       </article>
       <article className="flex flex-col">
         <div className="flex items-center pb-1">
-          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
+          <span className="w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
           <h2 className="text-base text-light-text-2 font-normal ml-3 dark:text-dark-mode-2">
             Linkedin
           </h2>
@@ -35,7 +35,7 @@ export const Contact = () => {
       </article>
       <article className="flex flex-col">
         <div className="flex items-center pb-1">
-          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
+          <span className="w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
           <h2 className="text-base text-light-text-2 font-normal ml-3 dark:text-dark-mode-2">
             Telefone
           </h2>
@@ -46,7 +46,7 @@ export const Contact = () => {
       </article>
       <article className="flex flex-col">
         <div className="flex items-center pb-1">
-          <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
+          <span className="w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
           <h2 className="text-base text-light-text-2 font-normal ml-3">
             GitHub
           </h2>

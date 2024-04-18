@@ -4,7 +4,7 @@ export const AboutMe = () => {
   return (
     <article className="flex flex-col pt-4">
       <div className="flex items-center pb-1">
-        <span className="absolute w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
+        <span className="w-[5px] h-4 bg-light-mode-5 dark:bg-dark-mode-4"></span>
         <h2 className="text-base text-light-text-2 font-normal mx-3 dark:text-dark-mode-2 flex justify-between w-full max-[400px]:text-sm">
           Quem é taby
           <span>

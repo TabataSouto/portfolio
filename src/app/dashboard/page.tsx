@@ -24,10 +24,10 @@ const list = [
 
 export default function Dashboard() {
   return (
-    <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col h-screen">
+    <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col min-h-screen">
       <DesktopHeader />
       <MobileHeader list={list} />
-      <section className="flex-1 flex flex-col items-center justify-center">
+      <section className="flex-1 flex flex-col items-center justify-center overflow-y-auto">
         <CardContrast />
         <MenuDashboard />
       </section>

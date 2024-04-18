@@ -91,7 +91,7 @@ export const Footer = ({
         <Link
           href={url ?? ""}
           onClick={() => title === "Home" && setMenu("usuários")}
-          className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[3px]"
+          className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[1px]"
         >
           {letter}
         </Link>
@@ -103,7 +103,7 @@ export const Footer = ({
   };
 
   return (
-    <footer className="text-white text-lg dark:bg-dark-mode-1">
+    <footer className="text-white text-lg dark:bg-dark-mode-1 sticky bottom-0 z-50 bg-white shadow">
       <hr className="mx-6 border-light-mode-1 dark:border-dark-mode-1" />
       <div className="flex items-center justify-between px-14 py-3">
         <div className="flex flex-col items-center gap-[6px] dark:text-white">

@@ -7,7 +7,7 @@ export const User = () => {
   const age = differenceInYears(currentDate, birthDate);
 
   return (
-    <article className="flex gap-4">
+    <article className="flex gap-4 pb-7">
       {/* imagem */}
       <div className="relative w-52 max-[900px]:hidden">
         <Image

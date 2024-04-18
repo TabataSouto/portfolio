@@ -30,7 +30,7 @@ export default function Home() {
     <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 dark:text-white text-lg tracking-wide flex flex-col justify-between min-h-screen">
       <DefaultHeader icon={setting} title="Configurações do console" />
       <MobileHeader list={list} />
-      <nav className="flex-1 grid grid-cols-[1fr,2fr] max-sm:flex max-sm:flex-col">
+      <nav className="flex-1 grid grid-cols-[1fr,2fr] max-sm:flex max-sm:flex-col overflow-y-auto">
         <ul className="ml-6 relative flex flex-col gap-4 pt-4 bg-light-mode-2 dark:bg-dark-mode-2 max-sm:hidden">
           {list.map(({ title, tag }, index) => (
             <>
