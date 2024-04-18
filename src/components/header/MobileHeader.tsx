@@ -1,7 +1,7 @@
 "use client";
 import { Context } from "@/context";
 import Link from "next/link";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 
 interface IMobileHeaderProps {
   list: {
