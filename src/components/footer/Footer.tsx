@@ -91,7 +91,7 @@ export const Footer = ({
         <Link
           href={url ?? ""}
           onClick={() => title === "Home" && setMenu("usuários")}
-          className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium text-sm flex justify-center items-center pb-[1px]"
+          className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium dark:font-bold text-sm flex justify-center items-center pb-[1px]"
         >
           {letter}
         </Link>

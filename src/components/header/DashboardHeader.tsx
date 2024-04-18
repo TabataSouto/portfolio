@@ -4,7 +4,7 @@ import Image from "next/image";
 import { profiles } from "@/data/profiles";
 import { Context } from "@/context";
 
-export const DesktopHeader = () => {
+export const DashboardHeader = () => {
   const { selected, setSelected } = useContext(Context);
   const [timeString, setTimeString] = useState("");
 

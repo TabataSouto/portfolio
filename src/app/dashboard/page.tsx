@@ -1,8 +1,7 @@
 import { CardContrast } from "@/components/dashboard/CardContrasts";
 import { MenuDashboard } from "@/components/dashboard/MenuDashboard";
 import { Footer } from "@/components/footer/Footer";
-import { DesktopHeader } from "@/components/header/DesktopHeader";
-import { MobileHeader } from "@/components/header/MobileHeader";
+import { DefaultHeader } from "@/components/header/DefaultHeader";
 
 const list = [
   {
@@ -25,8 +24,7 @@ const list = [
 export default function Dashboard() {
   return (
     <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col min-h-screen">
-      <DesktopHeader />
-      <MobileHeader list={list} />
+      <DefaultHeader title="" list={list} />
       <section className="flex-1 flex flex-col items-center justify-center overflow-y-auto max-sm:justify-start max-sm:py-10">
         <CardContrast />
         <MenuDashboard />

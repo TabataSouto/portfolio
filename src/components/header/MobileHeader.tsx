@@ -1,14 +1,11 @@
 "use client";
-import { Context } from "@/context";
-import Link from "next/link";
 import { useContext } from "react";
+import Link from "next/link";
+import { Context } from "@/context";
+import { IMobileHeader } from "@/data/interfaces";
 
 interface IMobileHeaderProps {
-  list: {
-    tag: string;
-    title: string;
-    url?: string;
-  }[];
+  list: IMobileHeader[]
 }
 
 export const MobileHeader = ({ list }: IMobileHeaderProps) => {

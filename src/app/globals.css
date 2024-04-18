@@ -20,3 +20,17 @@ body {
   box-sizing: border-box;
   overflow: hidden;
 }
+
+::-webkit-scrollbar {
+  width: 3px;
+  margin: 5px;
+  border-radius: 100%
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  padding: 5px;
+  background: #8e8e8e;
+  border-radius: 5px;
+  ;
+}
