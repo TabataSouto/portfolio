@@ -27,7 +27,7 @@ export default function Home() {
   const { menu, setMenu } = useContext(Context);
 
   return (
-    <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 dark:text-white text-lg tracking-wide h-screen flex flex-col justify-between">
+    <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 dark:text-white text-lg tracking-wide flex flex-col justify-between min-h-screen">
       {/* <DefaultHeader icon={setting} title="Configurações do console" />
       <MobileHeader list={list} /> */}
       {/* <nav className="flex-1 grid grid-cols-[1fr,2fr] max-sm:flex max-sm:flex-col">
