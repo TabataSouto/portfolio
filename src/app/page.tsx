@@ -28,9 +28,9 @@ export default function Home() {
 
   return (
     <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 dark:text-white text-lg tracking-wide flex flex-col justify-between min-h-screen">
-      {/* <DefaultHeader icon={setting} title="Configurações do console" />
-      <MobileHeader list={list} /> */}
-      {/* <nav className="flex-1 grid grid-cols-[1fr,2fr] max-sm:flex max-sm:flex-col">
+      <DefaultHeader icon={setting} title="Configurações do console" />
+      <MobileHeader list={list} />
+      <nav className="flex-1 grid grid-cols-[1fr,2fr] max-sm:flex max-sm:flex-col">
         <ul className="ml-6 relative flex flex-col gap-4 pt-4 bg-light-mode-2 dark:bg-dark-mode-2 max-sm:hidden">
           {list.map(({ title, tag }, index) => (
             <>
@@ -54,29 +54,8 @@ export default function Home() {
           ))}
         </ul>
         {menu === "temas" ? <Theme /> : <Profiles />}
-      </nav> */}
-      <header>
-        <h1 className="text-2xl">Header aqui</h1>
-        <hr className="h-[1px] w-full border-black" />
-      </header>
-      <div className="flex p-2">
-        {profiles.map(({ image, name }) => (
-          <Image
-            key={name}
-            src={image}
-            width={120}
-            height={120}
-            alt={name}
-            priority={false}
-            className="object-cover w-[120px] h-[120px]"
-          />
-        ))}
-      </div>
-      <footer>
-        <hr className="h-[1px] w-full border-black" />
-        <h1 className="text-2xl">Footer aqui</h1>
-      </footer>
-      {/* <Footer buttonA={true} titleButtonA={"Sejam bem-vindos(as)"} /> */}
+      </nav>
+      <Footer buttonA={true} titleButtonA={"Sejam bem-vindos(as)"} />
     </div>
   );
 }
