@@ -7,6 +7,8 @@ import { Footer } from "@/components/footer/Footer";
 import setting from "@/../public/settings.svg";
 import { Context } from "@/context";
 import { MobileHeader } from "@/components/header/MobileHeader";
+import { profiles } from "@/data/profiles";
+import Image from "next/image";
 
 const list = [
   {
@@ -22,14 +24,59 @@ const list = [
 ];
 
 export default function Home() {
-  const { menu } = useContext(Context);
+  const { menu, setMenu } = useContext(Context);
 
   return (
-    <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 dark:text-white text-lg tracking-wide max-sm:min-h-screen max-sm:flex max-sm:flex-col max-sm:justify-between">
-      <DefaultHeader icon={setting} title="Configurações do console" />
-      {/* <MobileHeader list={list} /> */}
-      <section>{menu === "temas" ? <Theme /> : <Profiles />}</section>
-      <Footer buttonA={true} titleButtonA={"Sejam bem-vindos(as)"} />
+    <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 dark:text-white text-lg tracking-wide h-screen flex flex-col justify-between">
+      {/* <DefaultHeader icon={setting} title="Configurações do console" />
+      <MobileHeader list={list} /> */}
+      {/* <nav className="flex-1 grid grid-cols-[1fr,2fr] max-sm:flex max-sm:flex-col">
+        <ul className="ml-6 relative flex flex-col gap-4 pt-4 bg-light-mode-2 dark:bg-dark-mode-2 max-sm:hidden">
+          {list.map(({ title, tag }, index) => (
+            <>
+              <li
+                key={index}
+                className="cursor-pointer"
+                onClick={() => setMenu(tag)}
+              >
+                {menu === tag && (
+                  <span className="absolute w-[3px] h-8 ml-12 bg-blue dark:bg-aqua"></span>
+                )}
+                <p
+                  className={`${
+                    menu === tag && "text-blue dark:text-aqua dark:font-light"
+                  } font-normal pl-14 dark:font-light dark:tracking-[0.05em]`}
+                >
+                  {title}
+                </p>
+              </li>
+            </>
+          ))}
+        </ul>
+        {menu === "temas" ? <Theme /> : <Profiles />}
+      </nav> */}
+      <header>
+        <h1 className="text-2xl">Header aqui</h1>
+        <hr className="h-[1px] w-full border-black" />
+      </header>
+      <div className="flex p-2">
+        {profiles.map(({ image, name }) => (
+          <Image
+            key={name}
+            src={image}
+            width={120}
+            height={120}
+            alt={name}
+            priority={false}
+            className="object-cover w-[120px] h-[120px]"
+          />
+        ))}
+      </div>
+      <footer>
+        <hr className="h-[1px] w-full border-black" />
+        <h1 className="text-2xl">Footer aqui</h1>
+      </footer>
+      {/* <Footer buttonA={true} titleButtonA={"Sejam bem-vindos(as)"} /> */}
     </div>
   );
 }
