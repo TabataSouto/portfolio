@@ -6,7 +6,7 @@ import Link from "next/link";
 export const CardContrast = () => {
   return (
     <nav className="bg-light-mode-1 dark:bg-dark-mode-1">
-      <ul className="flex w-full justify-center max-sm:flex-wrap max-sm:py-4 max-sm:px-1">
+      <ul className="flex w-full justify-center max-sm:flex-wrap max-[900px]:px-4 max-sm:py-4">
         {dashboardData.map(({ title, image, url }) => (
           <li
             key={title}
@@ -31,7 +31,7 @@ export const CardContrast = () => {
                     width={700}
                     height={700}
                     alt={title}
-                    className="w-56 h-56 object-cover shadow-sm shadow-gray-400 dark:shadow-black max-[900px]:w-36 max-[900px]:h-36"
+                    className="w-56 h-56 object-cover shadow-sm shadow-gray-400 dark:shadow-black max-[900px]:w-48 max-[900px]:h-48"
                   />
                 </Link>
               </div>

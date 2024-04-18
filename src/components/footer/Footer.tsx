@@ -103,7 +103,7 @@ export const Footer = ({
   };
 
   return (
-    <footer className="text-white text-lg dark:bg-dark-mode-1 sticky bottom-0 z-50 bg-white shadow">
+    <footer className="bg-light-mode-1 text-white text-lg dark:bg-dark-mode-1 sticky bottom-0 z-50 shadow">
       <hr className="mx-6 border-light-mode-1 dark:border-dark-mode-1" />
       <div className="flex items-center justify-between px-14 py-3">
         <div className="flex flex-col items-center gap-[6px] dark:text-white">

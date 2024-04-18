@@ -27,7 +27,7 @@ export default function Dashboard() {
     <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col min-h-screen">
       <DesktopHeader />
       <MobileHeader list={list} />
-      <section className="flex-1 flex flex-col items-center justify-center overflow-y-auto">
+      <section className="flex-1 flex flex-col items-center justify-center overflow-y-auto max-sm:justify-start max-sm:py-10">
         <CardContrast />
         <MenuDashboard />
       </section>
