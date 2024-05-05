@@ -5,6 +5,7 @@ import { MobileHeader } from "@/components/header/MobileHeader";
 import { LateralMenu } from "@/components/menu/LateralMenu";
 import { Contact } from "@/components/profile/Contact";
 import { Experience } from "@/components/profile/Experience";
+import { Formation } from "@/components/profile/Formation";
 import { ProfileUser } from "@/components/profile/Profile";
 import { Context } from "@/context";
 import { useContext } from "react";
@@ -41,6 +42,7 @@ export default function Profile() {
           {menu === "perfil" && <ProfileUser />}
           {menu === "contato" && <Contact />}
           {menu === "experiência" && <Experience />}
+          {menu === "formação" && <Formation />}
         </section>
       </div>
       <Footer

@@ -20,6 +20,12 @@ export const dashboatdMenu = [
     classImg: ""
   },
   {
+    title: "Hard Skills",
+    icon: "/hardskills.svg",
+    url: "/hard-skilss",
+    classImg: ""
+  },
+  {
     title: "Experiência",
     icon: "/experience.svg",
     url: "/profile",
@@ -27,15 +33,16 @@ export const dashboatdMenu = [
     classImg: "fill-current dark:invert"
   },
   {
-    title: "Hard Skills",
-    icon: "/hardskills.svg",
-    url: "/hard-skilss",
-    classImg: ""
-  },
-  {
     title: "Soft Skills",
     icon: "/softskills.svg",
     url: "/soft-skills",
+    classImg: "fill-current dark:invert"
+  },
+  {
+    title: "Formação",
+    icon: "/formation.svg",
+    url: "/profile",
+    tag: "formação",
     classImg: "fill-current dark:invert"
   },
 ]

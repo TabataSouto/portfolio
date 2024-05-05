@@ -12,7 +12,12 @@ export const MenuDashboard = () => {
     <nav>
       <ul className="flex pt-6 gap-4 text-transparent max-sm:hidden">
         {dashboatdMenu.map(({ title, icon, classImg, url, tag }) => (
-          <Link href={url} passHref key={title + url} onClick={() => setMenu(tag ?? "")}>
+          <Link
+            href={url}
+            passHref
+            key={title + url}
+            onClick={() => setMenu(tag ?? "")}
+          >
             <li className="group flex flex-col items-center w-16">
               <div className="transition-all ease-in-out delay-500 rounded-full p-[4px] inline-block group-hover:animate-border group-hover:bg-gradient-to-r group-hover:from-aqua group-hover:via-[#3291ef] group-hover:to-teal-400 group-hover:bg-[length:400%_400%] dark:p-[3px]">
                 <div
