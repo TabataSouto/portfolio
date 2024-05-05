@@ -22,6 +22,10 @@ const list = [
     tag: "formação",
     title: "Formação",
   },
+  {
+    tag: "experiência",
+    title: "Experiência",
+  },
 ];
 
 export default function Profile() {
