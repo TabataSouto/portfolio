@@ -1,7 +1,7 @@
+import { useContext } from "react";
+import { usePathname } from "next/navigation";
 import { Context } from "@/context";
 import { IMobileHeader } from "@/data/interfaces";
-import { usePathname } from "next/navigation";
-import { useContext } from "react";
 
 interface ILateralMenuProps {
   list: IMobileHeader[];

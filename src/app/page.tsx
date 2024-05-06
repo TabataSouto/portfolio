@@ -6,7 +6,6 @@ import { Profiles } from "@/components/home/Profiles";
 import { Footer } from "@/components/footer/Footer";
 import setting from "@/../public/settings.svg";
 import { Context } from "@/context";
-import { MobileHeader } from "@/components/header/MobileHeader";
 import { LateralMenu } from "@/components/menu/LateralMenu";
 
 const list = [

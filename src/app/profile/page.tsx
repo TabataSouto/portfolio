@@ -1,14 +1,13 @@
 "use client";
+import { useContext } from "react";
 import { Footer } from "@/components/footer/Footer";
 import { DefaultHeader } from "@/components/header/DefaultHeader";
-import { MobileHeader } from "@/components/header/MobileHeader";
 import { LateralMenu } from "@/components/menu/LateralMenu";
 import { Contact } from "@/components/profile/Contact";
 import { Experience } from "@/components/profile/Experience";
 import { Formation } from "@/components/profile/Formation";
 import { ProfileUser } from "@/components/profile/Profile";
 import { Context } from "@/context";
-import { useContext } from "react";
 
 const list = [
   {

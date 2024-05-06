@@ -4,8 +4,9 @@ import { ThemeProvider } from "@/context/themeContext";
 import MyProvider from "@/context";
 
 export const metadata: Metadata = {
-  title: "Tabata",
+  title: "Tabata Dev FullStack",
   description: "Desenvolvedora FullStack & UX/UI Designer",
+  icons: "/icon.svg"
 };
 
 export default function RootLayout({
