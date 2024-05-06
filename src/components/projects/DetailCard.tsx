@@ -28,8 +28,8 @@ export const DetailCard = ({
   infosCard: { image, name, github, web, description, tags },
 }: SimpleCard) => {
   return (
-    <section className="my-auto overflow-y-auto text-light-text dark:text-white">
-      <div className="relative flex flex-col items-center justify-center bg-light-mode-2 dark:bg-dark-mode-2 max-sm:bg-light-mode-1 max-sm:dark:bg-dark-mode-1">
+    <section className="flex-1 grid overflow-y-auto text-light-text dark:text-white max-sm:pt-5">
+      <div className="relative flex-1 flex flex-col items-center justify-center bg-light-mode-2 dark:bg-dark-mode-2 max-sm:bg-light-mode-1 max-sm:dark:bg-dark-mode-1">
         <Image
           src={image}
           alt={name}

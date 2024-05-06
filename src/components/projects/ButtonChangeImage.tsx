@@ -29,7 +29,8 @@ export const ButtonChangeImage = ({
   };
 
   return (
-    <div className="flex justify-between min-[640px]:hidden pt-5">
+    <div className="flex justify-around min-[640px]:hidden -top-5">
+
       <button
         onClick={() => handleChangeImage("back")}
         className="bg-white rounded-full w-8 h-8 h disabled:opacity-0 dark:bg-dark-mode-3 text-light-text-2 dark:text-dark-mode-2"
