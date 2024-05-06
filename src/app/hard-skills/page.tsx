@@ -40,7 +40,7 @@ export default function HardSkills() {
         urlX="/projects"
         buttonY
         titleButtonY="Contato"
-        urlY="/contact"
+        urlY="/profile"
       />
     </div>
   );

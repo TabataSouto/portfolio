@@ -40,20 +40,16 @@ export const Footer = ({
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
       if (urlY?.length && event.key.toLowerCase() === "y") {
-        titleButtonY === "Home" && setMenu("usuários");
-        titleButtonY === "Contato" && setMenu("contato");
+        titleButtonY === "Home" ? setMenu("usuários") : setMenu("contato");
         router.push(urlY);
       } else if (urlB?.length && event.key.toLowerCase() === "b") {
-        titleButtonB === "Home" && setMenu("usuários");
-        titleButtonB === "Contato" && setMenu("contato");
+        titleButtonB === "Home" ? setMenu("usuários") : setMenu("contato");
         router.push(urlB);
       } else if (urlA?.length && event.key.toLowerCase() === "a") {
-        titleButtonA === "Home" && setMenu("usuários");
-        titleButtonA === "Contato" && setMenu("contato");
+        titleButtonA === "Home" ? setMenu("usuários") : setMenu("contato");
         router.push(urlA);
       } else if (urlX?.length && event.key.toLowerCase() === "x") {
-        titleButtonX === "Home" && setMenu("usuários");
-        titleButtonX === "Contato" && setMenu("contato");
+        titleButtonX === "Home" ? setMenu("usuários") : setMenu("contato");
         router.push(urlX);
       }
     };
@@ -94,7 +90,9 @@ export const Footer = ({
       >
         <Link
           href={url ?? ""}
-          onClick={() => title === "Home" && setMenu("usuários")}
+          onClick={() =>
+            title === "Home" ? setMenu("usuários") : setMenu("contato")
+          }
           className=" bg-light-mode-4 dark:bg-white dark:text-dark-mode-1 rounded-full w-[1.375rem] h-[1.375rem] font-medium dark:font-bold text-sm flex justify-center items-center pb-[1px]"
         >
           {letter}

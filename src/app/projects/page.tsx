@@ -18,7 +18,7 @@ export default function Projects() {
         urlX="/projects"
         buttonY
         titleButtonY="Contato"
-        urlY="/contact"
+        urlY="/profile"
       />
     </div>
   );
