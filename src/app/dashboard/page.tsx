@@ -25,10 +25,10 @@ export default function Dashboard() {
   return (
     <div className="bg-light-mode-1 text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col min-h-screen">
       <DefaultHeader title="" list={list} />
-      <section className="flex-1 flex flex-col items-center justify-center overflow-y-auto max-sm:justify-start max-sm:py-10">
+      <main className="flex-1 flex flex-col items-center justify-center overflow-y-auto max-sm:justify-start max-sm:py-10">
         <CardContrast />
         <MenuDashboard />
-      </section>
+      </main>
       <Footer buttonA={true} titleButtonA={"Home"} urlA="/" />
     </div>
   );

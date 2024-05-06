@@ -29,8 +29,11 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  padding: 5px;
   background: #8e8e8e;
   border-radius: 5px;
-  ;
+}
+
+::-webkit-scrollbar {
+  /* width: 5px; */
+  height: 5px;             /* width of the entire scrollbar */
 }
