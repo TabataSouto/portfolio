@@ -19,14 +19,14 @@ interface IContext {
 }
 
 export const Context = createContext<IContext>({
-  selected: "taby",
+  selected: "Taby",
   setSelected: () => {},
   menu: "usuario",
   setMenu: () => {},
 });
 
 export default function MyProvider({ children }: IMyProviderProps) {
-  const [selected, setSelected] = useState("taby");
+  const [selected, setSelected] = useState("Taby");
   const [menu, setMenu] = useState<string>("usuários");
 
   const values = {

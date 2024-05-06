@@ -13,7 +13,7 @@ export const Profiles = () => {
       <ul className="flex flex-wrap max-sm:justify-center">
         {profiles.map(({ image, name }) => (
           <Link
-            href={`${name === "taby" ? "/dashboard" : ""}`}
+            href={`${name === "Taby" ? "/dashboard" : ""}`}
             key={name + image}
             onClick={() => setSelected(name)}
             className=""
