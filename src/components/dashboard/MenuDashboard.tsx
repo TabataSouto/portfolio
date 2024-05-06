@@ -10,7 +10,7 @@ export const MenuDashboard = () => {
 
   return (
     <nav>
-      <ul className="flex pt-6 gap-4 text-transparent max-sm:hidden">
+      <ul className="flex pt-6 gap-4 text-transparent max-sm:hidden max-[900px]:text-blue2 max-[900px]:dark:text-aqua2">
         {dashboatdMenu.map(({ title, icon, classImg, url, tag }) => (
           <Link
             href={url}
@@ -36,7 +36,7 @@ export const MenuDashboard = () => {
                   />
                 </div>
               </div>
-              <p className="w-24 text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 dark:group-hover:text-blue2 dark:font-light dark:pt-[1px]">
+              <p className="w-24 text-lg font-normal transition ease-in-out delay-150 text-center group-hover:text-aqua2 dark:group-hover:text-blue2 dark:font-light dark:pt-[1px] max-[900px]:text-sm max-[900px]:w-18">
                 {title}
               </p>
             </li>
