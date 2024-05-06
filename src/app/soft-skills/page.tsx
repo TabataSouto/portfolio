@@ -1,13 +1,24 @@
 "use client";
 import { Footer } from "@/components/footer/Footer";
 import { DefaultHeader } from "@/components/header/DefaultHeader";
+import { Context } from "@/context";
 import { softSkillsData } from "@/data/softskills";
 import Image from "next/image";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+
+const list = [
+  {
+    tag: "soft-skills",
+    title: "Soft Skills",
+  },
+];
 
 export default function SoftSkills() {
+  const { setMenu } = useContext(Context)
   const [index, setIndex] = useState(0);
   const [opacity, setOpacity] = useState(1);
+
+  useEffect(() => { setMenu("soft-skills") }, [setMenu])
 
   const handleChangeImage = (type: string) => {
     setOpacity(0);
@@ -27,7 +38,7 @@ export default function SoftSkills() {
 
   return (
     <div className="bg-[#EBEBEB] text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col h-full">
-      <DefaultHeader icon="/softskills.svg" title="Soft Skills" />
+      <DefaultHeader icon="/softskills.svg" title="Soft Skills" list={list} />
       <main className="flex-1 overflow-hidden flex items-center justify-center">
         <div className="flex gap-8 overflow-x-auto mx-5 pb-5">
           {softSkillsData.map(({ id, image, title }) => (
