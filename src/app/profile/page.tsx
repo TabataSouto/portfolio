@@ -34,8 +34,7 @@ export default function Profile() {
 
   return (
     <div className="bg-[#EBEBEB] text-dark-mode-1 dark:bg-dark-mode-1 dark:text-white text-lg tracking-wide flex flex-col min-h-screen">
-      <DefaultHeader icon="/user2.svg" title="Informações do usuário" />
-      <MobileHeader list={list} />
+      <DefaultHeader icon="/user2.svg" title="Informações do usuário" list={list} />
       <div className="flex-1 overflow-hidden grid grid-cols-[1fr,2fr] max-sm:flex max-sm:flex-col">
         <LateralMenu list={list} />
         <section className="flex-1 overflow-y-auto mr-5">

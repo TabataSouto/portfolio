@@ -22,7 +22,7 @@ export const dashboatdMenu = [
   {
     title: "Hard Skills",
     icon: "/hardskills.svg",
-    url: "/hard-skilss",
+    url: "/hard-skills",
     classImg: ""
   },
   {

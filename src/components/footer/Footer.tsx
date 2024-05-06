@@ -41,15 +41,19 @@ export const Footer = ({
     const handleKeyPress = (event: KeyboardEvent) => {
       if (urlY?.length && event.key.toLowerCase() === "y") {
         titleButtonY === "Home" && setMenu("usuários");
+        titleButtonY === "Contato" && setMenu("contato");
         router.push(urlY);
       } else if (urlB?.length && event.key.toLowerCase() === "b") {
         titleButtonB === "Home" && setMenu("usuários");
+        titleButtonB === "Contato" && setMenu("contato");
         router.push(urlB);
       } else if (urlA?.length && event.key.toLowerCase() === "a") {
         titleButtonA === "Home" && setMenu("usuários");
+        titleButtonA === "Contato" && setMenu("contato");
         router.push(urlA);
       } else if (urlX?.length && event.key.toLowerCase() === "x") {
         titleButtonX === "Home" && setMenu("usuários");
+        titleButtonX === "Contato" && setMenu("contato");
         router.push(urlX);
       }
     };

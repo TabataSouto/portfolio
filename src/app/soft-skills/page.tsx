@@ -29,7 +29,23 @@ export default function SoftSkills() {
     <div className="bg-[#EBEBEB] text-dark-mode-1 dark:bg-dark-mode-1 text dark:text-white text-lg tracking-wide flex flex-col h-full">
       <DefaultHeader icon="/softskills.svg" title="Soft Skills" />
       <main className="flex-1 overflow-hidden flex items-center justify-center">
-        <div className="carousel-item relative transition-transform duration-[600ms] ease-in-out">
+        <div className="flex gap-8 overflow-x-auto mx-5 pb-5">
+          {softSkillsData.map(({ id, image, title }) => (
+            <Image
+              key={id}
+              src={image}
+              alt={title}
+              // style={{
+              //   opacity: opacity,
+              //   transition: "opacity 0.5s ease-in-out",
+              // }}
+              width={600}
+              height={600}
+              className="w-80 h-80 object-cover max-[1050px]:w-60 max-[1050px]:h-60 max-[900px]:w-52 max-[900px]:h-52"
+            />
+          ))}
+        </div>
+        {/* <div className="carousel-item relative transition-transform duration-[600ms] ease-in-out">
           <Image
             id={softSkillsData[index].title}
             src={softSkillsData[index].image}
@@ -55,7 +71,7 @@ export default function SoftSkills() {
               ❯
             </button>
           </div>
-        </div>
+        </div> */}
       </main>
       <Footer
         buttonA
