@@ -17,7 +17,7 @@ export const LateralMenu = ({ list }: ILateralMenuProps) => {
         {list.map(({ title, tag }, index) => (
           <>
             <li
-              key={index}
+              key={tag + index}
               className="cursor-pointer"
               onClick={() => setMenu(tag)}
             >

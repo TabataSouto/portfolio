@@ -14,11 +14,13 @@ const list = [
 ];
 
 export default function SoftSkills() {
-  const { setMenu } = useContext(Context)
+  const { setMenu } = useContext(Context);
   const [index, setIndex] = useState(0);
   const [opacity, setOpacity] = useState(1);
 
-  useEffect(() => { setMenu("soft-skills") }, [setMenu])
+  useEffect(() => {
+    setMenu("soft-skills");
+  }, [setMenu]);
 
   const handleChangeImage = (type: string) => {
     setOpacity(0);
@@ -56,33 +58,6 @@ export default function SoftSkills() {
             />
           ))}
         </div>
-        {/* <div className="carousel-item relative transition-transform duration-[600ms] ease-in-out">
-          <Image
-            id={softSkillsData[index].title}
-            src={softSkillsData[index].image}
-            alt={softSkillsData[index].title}
-            className="w-[400px] h-[400px] object-cover"
-            style={{ opacity: opacity, transition: "opacity 0.5s ease-in-out" }}
-            width={600}
-            height={600}
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 -left-12 -right-12 top-1/2">
-            <button
-              onClick={() => handleChangeImage("back")}
-              className="bg-white rounded-full w-8 h-8 h disabled:opacity-0 dark:bg-dark-mode-3 text-light-text-2 dark:text-dark-mode-2"
-              disabled={index === 0}
-            >
-              ❮
-            </button>
-            <button
-              onClick={() => handleChangeImage("next")}
-              className="bg-white rounded-full w-8 h-8 disabled:opacity-0 dark:bg-dark-mode-3 text-light-text-2 dark:text-dark-mode-2"
-              disabled={index === softSkillsData.length - 1}
-            >
-              ❯
-            </button>
-          </div>
-        </div> */}
       </main>
       <Footer
         buttonA

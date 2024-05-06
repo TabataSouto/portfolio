@@ -56,7 +56,7 @@ export const projectsData = [
     description: "Meu atual portfólio! O design foi baseado na interface do vídeo game Nintendo Switch, com a ideia de juntar duas grandes paixões da minha vida: jogos e programação.",
     web: "https://tabatasouto.vercel.app/",
     github: "https://github.com/TabataSouto/portfolio",
-    tags: ["HTML", "CSS", "TypeScript", "NextJS", "Tailwind", "Context API", "Responsividade"],
+    tags: ["HTML", "CSS", "TypeScript", "NextJS", "Tailwind", "Context API"],
     status: "Completo"
   },
 ]
