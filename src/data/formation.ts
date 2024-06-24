@@ -39,5 +39,12 @@ export const formationData = [
     hours: "23h",
     set: []
   },
-
+  {
+    id: 5,
+    title: "React Completo",
+    institute: "Origamid",
+    level: "Curso Intensivo",
+    hours: "36h",
+    set: []
+  },
 ];

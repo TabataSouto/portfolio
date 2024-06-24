@@ -50,13 +50,23 @@ export const projectsData = [
     status: "Completo"
   },
   {
-    id: 5,
+    id: 6,
     name: "Portfólio Tabata Souto",
     image: "/portfolio-atual.png",
     description: "Meu atual portfólio! O design foi baseado na interface do vídeo game Nintendo Switch, com a ideia de juntar duas grandes paixões da minha vida: jogos e programação.",
     web: "https://tabatasouto.vercel.app/",
     github: "https://github.com/TabataSouto/portfolio",
     tags: ["HTML", "CSS", "TypeScript", "NextJS", "Tailwind", "Context API"],
+    status: "Completo"
+  },
+  {
+    id: 7,
+    name: "Dogs",
+    image: "/portfolio-atual.png",
+    description: "Simulação de uma rede social para cachorros e gatos.",
+    web: "",
+    github: "https://github.com/TabataSouto/dogs-project",
+    tags: ["HTML", "CSS", "JavaScript", "RectJs", "Css Module", "Context API", "API Restfull"],
     status: "Completo"
   },
 ]
