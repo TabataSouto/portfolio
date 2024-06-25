@@ -53,15 +53,17 @@ export const DetailCard = ({
                   className="fill-current dark:invert"
                 />
               </Link>
-              <Link href={web} target="_blank" passHref>
-                <Image
-                  src="/open-web.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                  className="fill-current dark:invert"
-                />
-              </Link>
+              {web && (
+                <Link href={web} target="_blank" passHref>
+                  <Image
+                    src="/open-web.svg"
+                    alt=""
+                    width={20}
+                    height={20}
+                    className="fill-current dark:invert"
+                  />
+                </Link>
+              )}
             </div>
             <div>
               <p className="text-xl font-normal text-blue dark:text-aqua max-[980px]:text-base max-lg:font-semibold max-[480px]:text-sm">

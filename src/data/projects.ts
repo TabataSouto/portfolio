@@ -62,7 +62,7 @@ export const projectsData = [
   {
     id: 7,
     name: "Dogs",
-    image: "/portfolio-atual.png",
+    image: "/dogs.png",
     description: "Simulação de uma rede social para cachorros e gatos.",
     web: "",
     github: "https://github.com/TabataSouto/dogs-project",
