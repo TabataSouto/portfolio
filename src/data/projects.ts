@@ -69,4 +69,14 @@ export const projectsData = [
     tags: ["HTML", "CSS", "JavaScript", "RectJs", "Css Module", "Context API", "API Restfull"],
     status: "Completo"
   },
+  {
+    id: 7,
+    name: "Fintech",
+    image: "/fintech.png",
+    description: "Simulação de um sistema para controle de vendas, apenas com leitura de API.",
+    web: "https://fintech-project-cyan.vercel.app/",
+    github: "https://github.com/TabataSouto/fintech-project",
+    tags: ["HTML", "CSS", "TypeScript", "RectJs", "Context API", "API"],
+    status: "Completo"
+  },
 ]

@@ -34,17 +34,13 @@ export const formationData = [
   {
     id: 4,
     title: "HTML e CSS para Iniciantes",
-    institute: "Origamid",
-    level: "Curso Intensivo",
-    hours: "23h",
-    set: []
-  },
-  {
-    id: 5,
-    title: "React Completo",
-    institute: "Origamid",
-    level: "Curso Intensivo",
-    hours: "36h",
-    set: []
-  },
+    institute: "Cursos Origamid",
+    level: "Desenvolvimento Front-End e UX/UI Designer",
+    hours: "69h",
+    set: [
+      "HTML e CSS para Iniciantes | 23H",
+      "React Completo | 36H",
+      "React com TypeScript | 10H"
+    ]
+  }
 ];
